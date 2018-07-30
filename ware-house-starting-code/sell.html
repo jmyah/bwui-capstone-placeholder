@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WareHouse</title>
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/base.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/sell.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+
+    <header role="banner" class="header">
+
+      <div class="image-container">
+        <a href="index.html"><img src="resources/img/home.png"></a>
+      </div>
+      <!--Search bar and cart -->
+      <div class="search-bar">
+        <input type="text" name="search" placeholder="Search for items">
+        <a href="" class="icon"><img src="resources/img/search.svg"></a>
+        <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
+      </div>
+
+    <!-- Navigation Bar-->
+      <nav class="navbar role="navigation">
+        <ul class="breadcrumb" role="list">
+          <li><a href="index.html" title="HOME" class="prods">HOME</a></li>
+          <li><a href="deals.html" title="Today's Deals" class="deals">Today's Deals</a></li>
+          <li><a href="products.html" title="All products" class="prods">All Products</a></li>
+          <li><a href="about.html" title="About Us" class="about">About Us</a></li>
+          <li class="sell">Sell</li>
+          <li><a href="help.html" title="Help" class="help">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sell Product Form -->
+
+    <div id="main" class="sell" role="main">
+      <h3>Sell</h3>
+      <div class="instructions">
+        <h4>Please enter details about the product you would like to sell and submit in the form below</h4>
+      </div>
+      <form role="form" title="sell form">
+        <div id="name" class="field">
+          <label for="name" aria-labelledby="Product Name">Product Name</label>
+          <input type="text" name="name" placeholder="Name of product">
+        </div>
+        <div id="price" class="field">
+          <label for="price" aria-labelledby="Product Price">Price</label>
+          <input type="number" name="price">
+        </div>
+        <div id="quantity" class="field">
+          <label for="quantity" aria-labelledby="Quantity">Quantity</label>
+          <select name="quantity">
+            <option value="100">10-100</option>
+            <option value="200">100-200</option>
+            <option value="300">200-300</option>
+            <option value="400">300-400</option>
+            <option value="500">>500</option>
+          </select>
+        </div>
+        <div id="description" class="field">
+          <label for="description" aria-labelledby="Product description" >Description</label>
+          <textarea type="text" name="description" placeholder="Description of product"></textarea>
+        </div>
+        <a href="#" class="button" id="submit">Submit</a>
+      </form>
+    </div>
+
+    <!-- Footer -->
+
+    <footer  role="contentinfo">
+      <img src="resources/img/home.png">
+        <div class="links">
+          <h4>Get to know us</h4>
+          <a href="about.html">About us</a>
+          <a href="jobs.html">Jobs</a>
+          <a href="#">Investor relations</a>
+          <a href="#">Link</a>
+        </div>
+        <div class="links">
+          <h4>Make money with us</h4>
+          <a href="sell.html">Sell on WareHouse</a>
+          <a href="#">Become a vendor</a>
+          <a href="#">Fundraiser events</a>
+          <a href="#">Community outreach</a>
+        </div>
+        <div class="links">
+          <h4>Help</h4>
+          <a href="help.html">Contact us</a>
+          <a href="#">Conditions of use</a>
+          <a href="#">Report a problem</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+  </div>
+</body>
+</html>

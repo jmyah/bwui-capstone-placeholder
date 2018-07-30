@@ -1,0 +1,87 @@
+#main {
+  text-align: left;
+  justify-items: auto;
+}
+
+.sell h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+form {
+  display: grid;
+  grid-template-areas: 'name name price quantity'
+                       'description description description description'
+                       '. . . submit';
+  font-size: inherit;
+}
+
+select {
+  background-color: hsla(0, 0%, 100%, 1);
+  font-size: inherit;
+}
+
+textarea {
+  min-height: 12rem;
+  font-size: inherit;
+}
+
+.instructions {
+  padding-bottom: 40px;
+}
+
+#name {
+  grid-area: name;
+}
+
+#price {
+  grid-area: price;
+  margin-left: 15px;
+}
+
+#quantity {
+  grid-area: quantity;
+  margin-left: 15px;
+}
+
+#description {
+  grid-area: description;
+  margin-top: 15px;
+}
+
+#submit {
+  grid-area: submit;
+  justify-self: end;
+  margin: 15px 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .sell {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  form {
+    grid-template-areas: 'name name'
+                         'price quantity'
+                         'description description'
+                         '. submit';
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  form {
+    grid-template-areas: 'name'
+                         'price'
+                         'quantity'
+                         'description'
+                         'submit';
+  }
+
+  #submit {
+
+    justify-self: center;
+  }
+}
